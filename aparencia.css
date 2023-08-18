@@ -1,0 +1,37 @@
+.CaronaWy{
+ color:red;
+ text-align: center;
+ font-size: 3rem;
+ 
+}
+
+.descricao{
+    color: chocolate;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(239, 212, 178);
+    border: 1px solid black;
+}
+
+.subtitulo{
+    color: chocolate;
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgb(239, 212, 178);
+    border: 1px solid black;
+}
+
+.imagem1{
+   margin-left: 24rem;
+   margin-right: 20rem;
+   border: 1px solid #777;
+}
+
+.imagem1:hover{
+    border: 5px solid #292828;
+    
+ }
+
+body{
+    background-color: rgb(240, 230, 215);
+}
