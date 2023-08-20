@@ -35,3 +35,20 @@
 body{
     background-color: rgb(240, 230, 215);
 }
+
+.acessos{
+    color: chocolate;
+    text-decoration: solid;
+    font-size: 1.5rem;
+    
+    width: 80px
+}
+
+li {
+    display: inline;
+  }
+  ul {
+    list-style-type: none;
+    margin: 1rem;
+    padding: 0;
+  }
