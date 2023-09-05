@@ -7,3 +7,8 @@
 body {
     background-color: rgb(240, 230, 215);
 }
+.subtitulo{
+    color: chocolate;
+    text-decoration: solid;
+    font-size: 1.5rem;
+}
