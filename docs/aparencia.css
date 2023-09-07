@@ -6,11 +6,10 @@
 }
 
 .descricao {
-    color: rgb(255, 251, 248);
+    color: red;
     text-align: center;
     font-size: 1.5rem;
-    background-color: rgb(236, 145, 33);
-    border: 1px solid black;
+    
 }
 
 .subtitulo {
@@ -32,9 +31,11 @@ body {
 }
 
 .acessos {
-    color: chocolate;
+    color: rgb(235, 141, 74);
     text-decoration: solid;
     font-size: 1.5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
 }
 
 li {
@@ -43,9 +44,9 @@ li {
 
 ul {
     list-style-type: none;
-    margin: 1rem;
+    margin: 2rem;
     padding: 8px;
-    background-color: rgb(236, 145, 33);
-    border: 1px solid black;
+    background-color: rgb(244, 239, 233);
+    
 }
 
