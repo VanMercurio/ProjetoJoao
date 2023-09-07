@@ -6,29 +6,29 @@
 }
 
 .descricao {
-    color: chocolate;
+    color: rgb(255, 251, 248);
     text-align: center;
     font-size: 1.5rem;
-    background-color: rgb(239, 212, 178);
+    background-color: rgb(236, 145, 33);
     border: 1px solid black;
 }
 
 .subtitulo {
-    color: chocolate;
+    color: rgb(251, 114, 16);
     text-align: center;
     font-size: 2rem;
-    background-color: rgb(239, 212, 178);
+    background-color: rgb(236, 145, 33);
     border: 1px solid black;
 }
 
 .imagem1 {
-    margin-left: 24rem;
+    margin-left: 32rem;
     margin-right: 20rem;
     border: 1px solid #9e0e0e;
 }
 
 body {
-    background-color: rgb(240, 230, 215);
+    background-color: rgb(249, 248, 247);
 }
 
 .acessos {
@@ -45,7 +45,7 @@ ul {
     list-style-type: none;
     margin: 1rem;
     padding: 8px;
-    background-color: rgb(239, 212, 178);
+    background-color: rgb(236, 145, 33);
     border: 1px solid black;
 }
 

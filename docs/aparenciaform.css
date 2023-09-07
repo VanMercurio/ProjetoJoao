@@ -5,10 +5,13 @@
 
 }
 body {
-    background-color: rgb(240, 230, 215);
+    background-color: rgb(249, 248, 247);
 }
 .subtitulo{
-    color: chocolate;
+    color: rgb(247, 116, 22);
     text-decoration: solid;
     font-size: 1.5rem;
+    margin-left: 38rem;
+    margin-right: 20rem;
 }
+
