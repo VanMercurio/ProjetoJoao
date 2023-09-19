@@ -27,7 +27,11 @@
 }
 
 body {
-    background-color: rgb(249, 248, 247);
+    margin: 50px 0 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgb(245, 102, 0), #ffffff);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .acessos {
