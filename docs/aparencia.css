@@ -38,7 +38,7 @@ body {
     color: rgb(235, 141, 74);
     text-decoration: solid;
     font-size: 1.5rem;
-    margin-left: 20rem;
+    margin-left: 40rem;
     margin-right: 20rem;
 }
 
@@ -46,11 +46,5 @@ li {
     display: inline;
 }
 
-ul {
-    list-style-type: none;
-    margin: 2rem;
-    padding: 8px;
-    background-color: rgb(244, 239, 233);
 
-}
 
