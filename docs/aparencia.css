@@ -29,7 +29,7 @@
 body {
     margin: 50px 0 0;
     padding: 0;
-    background: linear-gradient(to bottom, rgb(245, 102, 0), #ffffff);
+    background: linear-gradient(to bottom, rgb(222, 130, 65), #ffffff);
     background-repeat: no-repeat;
     background-size: cover;
 }
