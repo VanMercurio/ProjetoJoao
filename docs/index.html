@@ -23,9 +23,6 @@
             max-width: 600px;
             margin: auto;
         }
-        img{
-            width:50%%;
-        }
         
     </style>
 </head>
@@ -53,7 +50,11 @@
     </ul>
     <p class="descricao">
         O intuito deste projeto é auxiliar os alunos da Wyden com caronas !</p>
-    <img class="imagem1" src="carona2.jpg" alt="para o projeto">
+        <picture>
+        <source media="(max-width:750px )" srcset="carona-pp.jpg" type="image/jpg">
+        <source media="(max-width:1000px )" srcset="carona-p.jpg" type="image/jpg">        
+        <img class="imagem1" src="carona2.jpg" alt="para o projeto">
+        </picture>
     </div>
 
 </body>
