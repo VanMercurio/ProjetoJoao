@@ -9,7 +9,7 @@
     color: red;
     text-align: center;
     font-size: 1.5rem;
-
+    text-align: center;
 }
 
 .subtitulo {
@@ -21,8 +21,6 @@
 }
 
 .imagem1 {
-    margin-left: 32rem;
-    margin-right: 20rem;
     border: 1px solid #9e0e0e;
 }
 
@@ -38,12 +36,15 @@ body {
     color: rgb(235, 141, 74);
     text-decoration: solid;
     font-size: 1.5rem;
-    margin-left: 40rem;
-    margin-right: 20rem;
+    text-align: center;
 }
 
 li {
     display: inline;
+}
+
+img {
+    max-width: 100%;
 }
 
 

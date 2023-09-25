@@ -14,29 +14,31 @@ body {
     color: rgb(74, 33, 3);
     text-decoration: solid;
     font-size: 1.5rem;
-    margin-left: 38rem;
-    margin-right: 20rem;
+    text-align: center;
 }
 .cadastro{
     color: rgb(16, 12, 8);
     text-decoration: solid;
     font-size: 1.0rem;
-    margin-left: 38rem;
-    margin-right: 30rem;
+    text-align: center;
 }
 .social-login {
-    margin-left: 38rem;
-    margin-right: 40rem;
+    margin-bottom: center;
     display: flex;
     flex-direction: column;
     font-size: 1rem;
+    text-align: center;
+}
+
+input {
+    width: 30vw;
 }
 
 .sia-button{
     background-color: #ff290d;
     color: rgb(255, 255, 255);
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 5px 5px;
+    border-radius: 10px;
     text-decoration: none;
     display: inline-block;
     margin-right: 10px;
@@ -44,6 +46,4 @@ body {
 }
 .continue{
     font-size: small;
-    margin-left: 38rem;
-    margin-right: 40rem;
-}
+    text-align: center;
