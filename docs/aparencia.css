@@ -39,6 +39,11 @@ body {
     text-align: center;
 }
 
+.acessos a{
+    text-decoration: none;
+    color: #9e0e0e;
+}
+
 li {
     display: inline;
 }
