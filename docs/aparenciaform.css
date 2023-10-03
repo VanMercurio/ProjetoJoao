@@ -33,22 +33,130 @@ body {
     margin-right: 30rem;
 }
 
-input {
+.input {
     width: 30vw;
 }
 
-.sia-button{
-    background-color: #ff290d;
-    color: rgb(255, 255, 255);
-    padding: 5px 5px;
-    border-radius: 10px;
-    text-decoration: none;
-    display: inline-block;
-    
-    
+.icon-social{
+    text-align: center;
+    margin-top: 20px;
 }
+
+.logo-social{
+    border-radius: 10px;
+    height: 40px;
+}
+
 .continue{
     font-size: small;
     text-align: center;
    
+}
+
+.checkbox{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100px 350px;
+}
+
+.checkbox input{
+    display: flex;
+    justify-self: end;
+}
+
+.checkbox p{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+.termos{
+    text-align: center;
+}
+
+.link-icon-social{
+    background-color: #ff2a00;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .CaronaWy {
+        color: red;
+        text-align: center;
+        font-size: 3rem;
+    
+    }
+    body {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(to bottom, rgb(222, 130, 65), #ffffff);
+        background-repeat: no-repeat;
+    }
+    .subtitulo{
+        color: rgb(74, 33, 3);
+        text-decoration: solid;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .cadastro{
+        color: rgb(16, 12, 8);
+        text-decoration: solid;
+        font-size: 1.0rem;
+        text-align:center ;
+       
+    }
+    .social-login {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+    
+    .input {
+        width: 200px;
+    }
+    
+    .continue{
+        font-size: small;
+        text-align: center;
+       
+    }
+    
+    .checkbox{
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 100px 350px;
+    }
+    
+    .checkbox input{
+        display: flex;
+        justify-self: end;
+    }
+    
+    .checkbox p{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: 10px;
+        width: 270px;
+    }
+    
+    .icon{
+        height: 10px;
+    }
+    .confirm{
+        display: flex;
+        flex-direction: column;
+    }
 }
