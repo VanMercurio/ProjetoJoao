@@ -31,13 +31,13 @@
             <div class="cadastro">
                 <form action="/action_page.php">
                     <label for="fname">Nome:</label><br>
-                    <input type="text" id="fname" name="fname" value=""><br><br
+                    <input class="input" type="text" id="fname" name="fname" value=""><br><br
                     <label for="name">Sobrenome:</label><br>
-                    <input type="text" id="lname" name="lname" value=""><br><br>
+                    <input class="input" type="text" id="lname" name="lname" value=""><br><br>
                     <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"><br><br>
+                    <input class="input" type="email" id="email" name="email"><br><br>
                     <label for="telefone">Telefone:</label><br>
-                    <input type="telefone" id="number" name="email"><br><br>
+                    <input class="input" type="telefone" id="number" name="email"><br><br>
                     <a href="index.html">
                     <button type="button" class="btn btn-success">Confirmar<br>
 
@@ -46,26 +46,28 @@
                 </form>
                 
             </div>
-            <div class="social-login"><br>
-                
-                <a href="https://portal.siaaluno.com.br/sianet/Logon" class="sia-button" target="_blank" ref="external">
-                    <img class="imglogo" src="https://play-lh.googleusercontent.com/IzB3C0QJ9rkj-dnjIqj6jrlpR_ynOoGvLwmtLWQHlpxCZuLSAQFMRLZByb2vramypw=w240-h480-rw" height="25px" alt="SIA" class="icon">
-                Continuar com SIA Wyden
 
-                </button>  
-                </a>
+            <div class="icon-social">
+                <a class="link-icon-social" href="https://portal.siaaluno.com.br/sianet/Logon"><img class="logo-social" src="https://play-lh.googleusercontent.com/IzB3C0QJ9rkj-dnjIqj6jrlpR_ynOoGvLwmtLWQHlpxCZuLSAQFMRLZByb2vramypw=w240-h480-rw" alt="SIA" class="icon">Continuar com SIA Wyden</a>     
             </div>
         
             <br>
             <div class="continue">
                 <p>Ao continuar, você concorda em receber chamadas e mensagens SMS ou pelo WhatsApp,<br>
             inclusive automáticas, da CaronaWy e de suas afiliadas, para o número informado.</p>            
-                <p><input type="checkbox"id="aceitar"name="aceitar"> Para continuar, leia e aceite nossos<br>
-                <a href="/termos-e-condicoes">Termos e Condições</a> e
-                <a href="/politica-de-privacidade">Política de Privacidade</a>.
             </p>
             </div>    
-                
+            <div class="confirm">
+                <div class="checkbox">
+                    <input type="checkbox"id="aceitar"name="aceitar">
+                    <p>Para continuar, leia e aceite nossos</p>
+                </div>
+                <div class="termos">
+                    <a href="/termos-e-condicoes">Termos e Condições</a> e
+                    <a href="/politica-de-privacidade">Política de Privacidade</a>
+                </div>
+            </div>
+            
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
