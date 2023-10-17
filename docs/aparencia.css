@@ -1,56 +1,65 @@
-.CaronaWy {
-    color: rgb(237, 25, 25);
-    text-align: center;
-    font-size: 3rem;
+:root{
+    --color-white:#ffffff;
+    --color-red:#e63636;
+    --color-dark1:#181818;
+    --color-dark2:#1e1e1e;
+    --color-orange1:#f1af80;
+    --color-orange2: #f7934b;
+    --color-orange3:#f9e0ce;
+    --color-blue:#1d054e;
+}
+
+.BláBlaluno {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-blue);
+    text-align:left;
+    font-size: 2rem;
+    margin-left: 7%;
+    display: flex;
+    align-items: center;
 
 }
 
 .descricao {
-    color: red;
+    color: var(--color-blue);
     text-align: center;
     font-size: 1.5rem;
-    text-align: center;
+    
 }
 
 .subtitulo {
-    color: rgb(251, 114, 16);
-    text-align: center;
-    font-size: 2rem;
-    background-color: rgb(236, 145, 33);
-    border: 1px solid black;
-}
-
-.imagem1 {
-    border: 1px solid #9e0e0e;
-}
-
-body {
-    margin: 50px 0 0;
-    padding: 0;
-    background: linear-gradient(to bottom, rgb(222, 130, 65), #ffffff);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.acessos {
-    color: rgb(235, 141, 74);
+    color: rgb(255, 255, 255);
     text-decoration: solid;
-    font-size: 1.5rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.acessos a{
-    text-decoration: none;
-    color: #9e0e0e;
+.imagem1 {    
+   
+    max-width: 80%;
+    margin: auto;
+    display: block;
+    border-radius:  15%;
+    
 }
 
-li {
-    display: inline;
+button[type="submit"]{
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;    
+    color: var(--color-blue);
+    background-color: var(--color-blue)
+    cursor: pointer;
+  }
+  button[type="submit"]:hover{
+    background-color: var(--color-orange2);
 }
-
-img {
-    max-width: 100%;
-}
-
 
 
