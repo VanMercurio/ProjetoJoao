@@ -1,21 +1,19 @@
-:root{
-    --color-white:#ffffff;
-    --color-red:#e63636;
-    --color-dark1:#181818;
-    --color-dark2:#1e1e1e;
-    --color-orange1:#f1af80;
+:root {
+    --color-white: #ffffff;
+    --color-red: #e63636;
+    --color-dark1: #181818;
+    --color-dark2: #1e1e1e;
+    --color-orange1: #f1af80;
     --color-orange2: #f7934b;
-    --color-orange3:#f9e0ce;
-    --color-blue:#1d054e;
+    --color-orange3: #f9e0ce;
+    --color-blue: #1d054e;
 }
 
 .BláBlaluno {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-blue);
-    text-align:left;
+    text-align: center;
     font-size: 2rem;
-    margin-left: 7%;
-    display: flex;
     align-items: center;
 
 }
@@ -24,42 +22,32 @@
     color: var(--color-blue);
     text-align: center;
     font-size: 1.5rem;
+}
+
+.imagem1 {
     
-}
-
-.subtitulo {
-    color: rgb(255, 255, 255);
-    text-decoration: solid;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.imagem1 {    
-   
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     display: block;
-    border-radius:  15%;
+    
+
+}
+
+button[type="submit"] {
+    padding: 1rem;
+    font-size: 1rem;   
+    border: none;
+    border-radius: 5px;
+    color: var(--color-blue);
+    background-color: var(--color-orange2);
+    cursor: pointer;
+}
+
+.ava {
+    text-align: left;
     
 }
 
-button[type="submit"]{
-    padding: 1rem;
-    font-size: 1rem;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    margin-top: 1rem;    
-    color: var(--color-blue);
-    background-color: var(--color-blue)
-    cursor: pointer;
-  }
-  button[type="submit"]:hover{
-    background-color: var(--color-orange2);
+button[type="submit"]:hover {
+    background-color: var(--color-orange3);
 }
-
-

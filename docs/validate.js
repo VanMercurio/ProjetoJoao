@@ -3,6 +3,7 @@
     const adressInput = document.querySelector('#adress');
     const cityInput = document.querySelector('#city');
     const emailInput = document.querySelector('#email');
+    const nascInput = document.querySelector('#nasc');
     const pontorefInput = document.querySelector('#pontoref');
     const passwordInput = document.querySelector('#password');
     const repetInput = document.querySelector('#repet');
@@ -35,6 +36,12 @@
         alert("Por favor, preencha o seu email");
         return;
     }    
+
+    //Verifica se a data de nasc esta preenchida
+    if(nascInput.value === "" ){
+        alert("Por favor, preencha a data de nascimento.");
+        return;
+    } 
       //Verifica se o ponto de ref está vazio
       if(pontorefInput.value === ""){
         alert("Por favor, preencha o ponto de refêencia");
@@ -46,10 +53,21 @@
         return;
     } 
       //Verifica se a senha é igual
-      if(!comparePassword(repetInput.value == passwordInput)){
-        alert("Aa Senhas precisam iguais");
+      if(repetInput.value == passwordInput){
+        alert("Aa Senhas não conferem");
         return;
     } 
+    
+    //Verifica se o sexo foi preenchido
+    if(sexoInput.value === "" ){
+        alert("Por favor, selecione o sexo.");
+        return;
+    }
+    //Verifica se a classificação foi preenchida
+    if(adicionaisInput.value === "" ){
+        alert("Por favor, selecione a classificação.");
+        return;
+    }
 
     //Se todos os campos estiverem preenchidos, envie o form
     form.submit()
@@ -76,6 +94,7 @@
     }   
         return false;      
     }
-    
+
+  
 
     

@@ -24,7 +24,7 @@
                 
     <div class="content">
         <h2>Cadastre-se</h2> <!--Início do formulário-->
-        <form  action="/action_page.php" id="form"> <!--Para lincar o BD-->
+        <form  action="/action_page.php"  method="POST" id="form"> <!--Para lincar o BD-->
             <div>
                 <input type="text" id="name" placeholder="Digite seu nome completo" class="inputs required" oninput="nameValidate()">  <!--Nome-->             
             </div>
@@ -36,9 +36,15 @@
                
             </div>
             <div>
+                <label for="nasc">Data de nascimento</label><!--data de nascimento-->  
+                <input type="date" id="nasc" class="inputs required" oninput="nasclValidate()">  
+                 
+            </div>
+            <div>
                 <input type="email" id="email" placeholder="Digite seu melhor e mail" class="inputs required" oninput="emailValidate()">  <!--email-->   
                              
             </div>
+           
             <div>
                 <input type="text" id="pontoref" placeholder="Digite um ponto de referência" class="inputs required" oninput="ptValidate()">  <!--ponto de referência-->   
                               
@@ -77,10 +83,11 @@
                     <input type="checkbox" name="adicionais" id="a">
                     <label for="a">Motorista</label>
                 </div>               
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-
+            </div>            
+           
+            </form>
+            <a href="login.html">
+            <button type="submit" class="enviar">Enviar</button></a>
     </div>
    
 <p class="termos"><input type="checkbox" id="aceitar" name="aceitar"> Para continuar, leia e aceite
