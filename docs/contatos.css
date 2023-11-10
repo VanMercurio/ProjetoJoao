@@ -26,9 +26,14 @@ p{
     margin: 45px;
 }   
 .nos{
-    border-radius: 50%;
-    
+    border-radius: 50%;    
+    margin-left: 2%;
+      
 }
+legend{
+    font-size: 2rem;
+}    
+
 fieldset{
    width: 40%;
    height: 250px;
@@ -58,7 +63,7 @@ button[type="submit"]{
     outline: none;
     border: none;
     border-radius: 5px;
-    margin-top: 1rem;
+    margin-left: 47%;
     background-color: var(--color-orange2);
     color: var(--color-blue);
     cursor: pointer;
@@ -67,15 +72,7 @@ button[type="submit"]{
 button[type="submit"]:hover{
     background-color: var(--color-orange3);
 }
-.home{
-    padding: 1rem;
-    font-size: 1rem;  
-    border: 2px;
-    border-radius: 5px;
-    margin-top: 1rem;
-    background-color: var(--color-orange2);
-    cursor: pointer;
-}
+
 
 @media screen and (max-widht:576px) {
     .box-select{
