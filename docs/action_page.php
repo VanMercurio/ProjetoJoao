@@ -1,15 +1,4 @@
 <?php
-// Conecte-se ao banco de dados
-$servername = "seu_servidor_mysql";
-$username = "seu_usuario_mysql";
-$password = "sua_senha_mysql";
-$dbname = "seu_banco_de_dados";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Falha na conexão com o banco de dados: " . $conn->connect_error);
-}
 
 // Coleta os dados do formulário
 $nome = $_GET['name'];
@@ -22,8 +11,20 @@ $senha = $_GET['password'];
 $sexo = $_GET['sexo'];
 $classificacao = implode(', ', $_GET['adicionais']); // Selecione todos os adicionais selecionados
 
-// Inserir os dados no banco de dados
-$sql = "INSERT INTO usuarios (nome, endereco, cidade, data_nascimento, email, ponto_referencia, senha, sexo, classificacao) VALUES ('$nome', '$endereco', '$cidade', '$data_nascimento', '$email', '$ponto_referencia', '$senha', '$sexo', '$classificacao')";
+// Conectar ao banco de dados (substitua com suas credenciais)
+$servername = "seu_servidor_mysql";
+$username = "seu_usuario_mysql";
+$password = "sua_senha_mysql";
+$dbname = "seu_banco_de_dados";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Falha na conexão com o banco de dados: " . $conn->connect_error);
+}
+
+// Inserir dados no banco de dados
+$sql = "INSERT INTO tabela_usuarios (nome, endereco, cidade, ...) VALUES ('$nome', '$endereco', '$cidade', ...)";
 
 if ($conn->query($sql) === TRUE) {
     echo "Cadastro bem-sucedido!";

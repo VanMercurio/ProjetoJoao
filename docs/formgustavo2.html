@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-bt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,91 +10,119 @@
     <link rel="stylesheet" href="cssform2.css">
     <title>Formulário</title>
 </head>
+
 <body>
     <main class="container"> <!--Classificação para responsividade-->
         <div class="row">
             <br>
             <div class="col-md-4">
-                           
+
                 <h1>BláBlaluno <!--Cabeçalho-->
-                    <img src="https://static.thenounproject.com/png/293801-200.png" height="30px"
-                        alt="Carro de carona"> 
-                        <a href="index.html" class="Home">
-                            <button type="submit" class="confirm-button">Home</button></a> </h1> 
-                        <h3 class="subtitulo">Bem vindo ao BláBlaluno!</h3>
-                
-    <div class="content">
-        <h2>Cadastre-se</h2> <!--Início do formulário-->
-        <form  action="/action_page.php"  method="POST" id="form"> <!--Para lincar o BD-->
-            <div>
-                <input type="text" id="name" placeholder="Digite seu nome completo" class="inputs required" oninput="nameValidate()">  <!--Nome-->             
-            </div>
-            <div>
-                <input type="text" id="adress" placeholder="Digite seu endereço" class="inputs required" oninput="addValidate()"> <!--endereço-->   
-            </div>
-            <div>
-                <input type="text" id="city" placeholder="Digite sua cidade" class="inputs required" oninput="cityValidate()">  <!--cidade-->   
-               
-            </div>
-            <div>
-                <label for="nasc">Data de nascimento</label><!--data de nascimento-->  
-                <input type="date" id="nasc" class="inputs required" oninput="nasclValidate()">  
-                 
-            </div>
-            <div>
-                <input type="email" id="email" placeholder="Digite seu melhor e mail" class="inputs required" oninput="emailValidate()">  <!--email-->   
-                             
-            </div>
-           
-            <div>
-                <input type="text" id="pontoref" placeholder="Digite um ponto de referência" class="inputs required" oninput="ptValidate()">  <!--ponto de referência-->   
-                              
-            </div>
-            <div>
-                <input type="password" id="password" placeholder="Digite uma senha" class="inputs required" oninput="mainPasswordValidate()"> <!--senha-->   
-               
-            </div>
-            <div>
-                <input type="password" id="repetpassword" placeholder="Repita a senha" class="inputs required" oninput="comparePassword()">  <!--repita a senha-->   
-              
-            </div>
-            <p>Sexo:</p>
-            <div class="box-select" id="sexo">
-                <div>
-                    <input type="radio" name="sexo" id="m">
-                    <label for="m">Masculino</label>
+                    <img src="https://static.thenounproject.com/png/293801-200.png" height="30px" alt="Carro de carona">
+                    <a href="index.html" class="Home">
+                        <button type="submit" class="confirm-button">Home</button></a>
+                </h1>
+                <h3 class="subtitulo">Bem vindo ao BláBlaluno!</h3>
+
+                <div class="content">
+                    <h2>Cadastre-se</h2> <!--Início do formulário-->
+                    <form action="/action_page.php" method="POST" id="form"> <!--Para lincar o BD-->
+                        <div>
+                            <input type="text" id="name" placeholder="Digite seu nome completo" class="inputs required"
+                                oninput="nameValidate()"> <!--Nome-->
+                        </div>
+                        <div>
+                            <input type="text" id="adress" placeholder="Digite seu endereço" class="inputs required"
+                                oninput="addValidate()"> <!--endereço-->
+                        </div>
+                        <div>
+                            <input type="text" id="city" placeholder="Digite sua cidade" class="inputs required"
+                                oninput="cityValidate()"> <!--cidade-->
+
+                        </div>
+                        <div>
+                            <label for="nasc">Data de nascimento</label><!--data de nascimento-->
+                            <input type="date" id="nasc" class="inputs required" oninput="nasclValidate()">
+
+                        </div>
+                        <div>
+                            <input type="email" id="email" placeholder="Digite seu melhor e mail"
+                                class="inputs required" oninput="emailValidate()"> <!--email-->
+
+                        </div>
+
+                        <div>
+                            <input type="text" id="pontoref" placeholder="Digite um ponto de referência"
+                                class="inputs required" oninput="ptValidate()"> <!--ponto de referência-->
+
+                        </div>
+                        <div>
+                            <input type="password" id="password" placeholder="Digite uma senha" class="inputs required"
+                                oninput="mainPasswordValidate()"> <!--senha-->
+
+                        </div>
+                        <div>
+                            <input type="password" id="repetpassword" placeholder="Repita a senha"
+                                class="inputs required" oninput="comparePassword()"> <!--repita a senha-->
+
+                        </div>
+                        <p>Sexo:</p>
+                        <div class="box-select" id="sexo">
+                            <div>
+                                <input type="radio" name="sexo" id="m">
+                                <label for="m">Masculino</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="sexo" id="f">
+                                <label for="f">Feminino</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="sexo" id="o">
+                                <label for="o">Outro</label>
+                            </div>
+                        </div>
+
+                        <p>Qual a sua classificação ?</p>
+                        <div class="box-select" id="adicionais">
+                            <div>
+                                <input type="checkbox" name="adicionais" id="a">
+                                <label for="a">Carona</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="adicionais" id="a">
+                                <label for="a">Motorista</label>
+                            </div>
+                        </div>
+
+                    </form>
+                    <a href="action_page.php">
+                        <button type="submit" class="enviar">Enviar</button></a>
                 </div>
-                <div>
-                    <input type="radio" name="sexo" id="f">
-                    <label for="f">Feminino</label>
-                </div>
-                <div>
-                    <input type="radio" name="sexo" id="o">
-                    <label for="o">Outro</label>
-                </div>
-            </div>
-            
-            <p>Qual a sua classificação ?</p>
-            <div class="box-select" id="adicionais">
-                <div>
-                    <input type="checkbox" name="adicionais" id="a">
-                    <label for="a">Carona</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="adicionais" id="a">
-                    <label for="a">Motorista</label>
-                </div>               
-            </div>            
-           
-            </form>
-            <a href="login.html">
-            <button type="submit" class="enviar">Enviar</button></a>
-    </div>
-   
-<p class="termos"><input type="checkbox" id="aceitar" name="aceitar"> Para continuar, leia e aceite
-    nossos <br>
-    <a href="/termos-e-condicoes">Termos e Condições</a> e
-    <a href="/politica-de-privacidade">Política de Privacidade</a>
-</p>
+
+                <p class="termos"><input type="checkbox" id="aceitar" name="aceitar"> Para continuar, leia e aceite
+                    nossos <br>
+                    <a href="/termos-e-condicoes">Termos e Condições</a> e
+                    <a href="/politica-de-privacidade">Política de Privacidade</a>
+                </p>
+
+                <script>
+                    document.getElementById("form").addEventListener("submit", function (event) {
+                        event.preventDefault(); // Evita o envio padrão do formulário
+                        var formData = new FormData(this);
+
+                        // Envia os dados para o arquivo PHP no servidor usando AJAX
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("POST", "action_page.php", true);
+                        xhr.onload = function () {
+                            if (xhr.status === 200) {
+                                alert(xhr.responseText); // Exibe a resposta do servidor
+                            } else {
+                                alert('Erro ao enviar o formulário.');
+                            }
+                        };
+                        xhr.send(formData);
+                    });
+                </script>
 </body>
+
 </html>
