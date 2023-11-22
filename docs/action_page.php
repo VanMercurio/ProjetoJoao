@@ -12,15 +12,15 @@ if ($conn->connect_error) {
 }
 
 // Coleta os dados do formulário
-$nome = $_POST['name'];
-$endereco = $_POST['adress'];
-$cidade = $_POST['city'];
-$data_nascimento = $_POST['nasc'];
-$email = $_POST['email'];
-$ponto_referencia = $_POST['pontoref'];
-$senha = $_POST['password'];
-$sexo = $_POST['sexo'];
-$classificacao = implode(', ', $_POST['adicionais']); // Selecione todos os adicionais selecionados
+$nome = $_GET['name'];
+$endereco = $_GET['adress'];
+$cidade = $_GET['city'];
+$data_nascimento = $$_GET['nasc'];
+$email = $_GET['email'];
+$ponto_referencia = $_GET['pontoref'];
+$senha = $_GET['password'];
+$sexo = $_GET['sexo'];
+$classificacao = implode(', ', $_GET['adicionais']); // Selecione todos os adicionais selecionados
 
 // Inserir os dados no banco de dados
 $sql = "INSERT INTO usuarios (nome, endereco, cidade, data_nascimento, email, ponto_referencia, senha, sexo, classificacao) VALUES ('$nome', '$endereco', '$cidade', '$data_nascimento', '$email', '$ponto_referencia', '$senha', '$sexo', '$classificacao')";
@@ -32,4 +32,3 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-?>
