@@ -33,16 +33,19 @@
                     <h2>Login</h2> <!--Início do formulário-->
                     <form id="form"> <!--Para lincar o BD-->
                         <div>
-                            <input class="input" type="text" id="login" placeholder="Usuário"> <!--usuario-->
+                            <input class="input" type="text" name="login" id="login" placeholder="Usuário" required>
+                            <!--usuario-->
                         </div>
                         <div>
-                            <input class="input" type="password" id="senha" placeholder="Senha"> <!--senha-->
+                            <input class="input" name="senha" type="password" id="senha" placeholder="Senha" required
+                                minlength="6" maxlength="6">
+                            <!--senha-->
                         </div>
 
-                    </form>
-                    <a href="logado.html">
                         <button type="submit">Enviar</button>
-                    </a>
+
+                    </form>
+
                 </div>
 
                 <p class="termos"><input type="checkbox" id="aceitar" name="aceitar"> Para continuar, leia e aceite

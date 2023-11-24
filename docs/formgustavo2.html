@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>BláBlaluno</title>
-    <script src="validate.js" defer></script>
     <link rel="stylesheet" href="cssform2.css">
     <title>Formulário</title>
 </head>
 
 <body>
     <main class="container"> <!--Classificação para responsividade-->
+
+
         <div class="row">
             <br>
             <div class="col-md-4">
@@ -26,77 +27,79 @@
 
                 <div class="content">
                     <h2>Cadastre-se</h2> <!--Início do formulário-->
-                    <form action="/action_page.php" method="POST" id="form"> <!--Para lincar o BD-->
+                    <form action="action_page.php" method="POST" id="form">
+                        <!--Para lincar o BD-->
                         <div>
-                            <input type="text" id="name" placeholder="Digite seu nome completo" class="inputs required"
-                                oninput="nameValidate()"> <!--Nome-->
+                            <input type="text" name='nome' id="nome" placeholder="Digite seu nome completo"
+                                class="inputs required" required>
+                            <!--Nome-->
                         </div>
                         <div>
-                            <input type="text" id="adress" placeholder="Digite seu endereço" class="inputs required"
-                                oninput="addValidate()"> <!--endereço-->
+                            <input type="text" name='endereco' id="endereco" placeholder="Digite seu endereço"
+                                class="inputs required" required>
+                            <!--endereço-->
                         </div>
                         <div>
-                            <input type="text" id="city" placeholder="Digite sua cidade" class="inputs required"
-                                oninput="cityValidate()"> <!--cidade-->
+                            <input type="text" name='cidade' id="cidade" placeholder="Digite sua cidade"
+                                class="inputs required" required>
+                            <!--cidade-->
 
                         </div>
                         <div>
                             <label for="nasc">Data de nascimento</label><!--data de nascimento-->
-                            <input type="date" id="nasc" class="inputs required" oninput="nasclValidate()">
+                            <input type="date" name='data_nascimento' id="data_nascimento" class="inputs required"
+                                required>
 
                         </div>
                         <div>
-                            <input type="email" id="email" placeholder="Digite seu melhor e mail"
-                                class="inputs required" oninput="emailValidate()"> <!--email-->
+                            <input type="email" name='email' id="email" placeholder="Digite seu melhor e mail"
+                                class="inputs required" required> <!--email-->
 
                         </div>
 
                         <div>
-                            <input type="text" id="pontoref" placeholder="Digite um ponto de referência"
-                                class="inputs required" oninput="ptValidate()"> <!--ponto de referência-->
+                            <input type="text" name='ponto_referencia' id="ponto_referencia"
+                                placeholder="Digite um ponto de referência" class="inputs required" required>
+                            <!--ponto de referência-->
 
                         </div>
                         <div>
-                            <input type="password" id="password" placeholder="Digite uma senha" class="inputs required"
-                                oninput="mainPasswordValidate()"> <!--senha-->
+                            <input type="password" name='senha' id="senha" minlength="6" maxlength="6"
+                                placeholder="Digite uma senha" class="inputs required" required>
+                            <!--senha-->
 
                         </div>
-                        <div>
-                            <input type="password" id="repetpassword" placeholder="Repita a senha"
-                                class="inputs required" oninput="comparePassword()"> <!--repita a senha-->
 
-                        </div>
                         <p>Sexo:</p>
                         <div class="box-select" id="sexo">
                             <div>
-                                <input type="radio" name="sexo" id="m">
-                                <label for="m">Masculino</label>
+                                <input type="radio" name="sexo" id="sexo" value="masculino">
+                                <label>Masculino</label>
                             </div>
                             <div>
-                                <input type="radio" name="sexo" id="f">
-                                <label for="f">Feminino</label>
+                                <input type="radio" name="sexo" id="sexo" value="feminino">
+                                <label>Feminino</label>
                             </div>
                             <div>
-                                <input type="radio" name="sexo" id="o">
-                                <label for="o">Outro</label>
+                                <input type="radio" name="sexo" id="sexo" value="outros">
+                                <label>Outro</label>
                             </div>
                         </div>
 
                         <p>Qual a sua classificação ?</p>
-                        <div class="box-select" id="adicionais">
+                        <div class="box-select" id="classificacao">
                             <div>
-                                <input type="checkbox" name="adicionais" id="a">
-                                <label for="a">Carona</label>
+                                <input type="checkbox" name='classificacao' id="classificacao" value="carona">
+                                <label for="classificacao">Carona</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="adicionais" id="a">
-                                <label for="a">Motorista</label>
+                                <input type="checkbox" name='classificacao' id="classificacao" value="motorista">
+                                <label for="classificacao">Motorista</label>
                             </div>
                         </div>
-
+                        <button type="submit" class="enviar">Enviar</button>
                     </form>
-                    <a href="action_page.php">
-                        <button type="submit" class="enviar">Enviar</button></a>
+
                 </div>
 
                 <p class="termos"><input type="checkbox" id="aceitar" name="aceitar"> Para continuar, leia e aceite
@@ -105,24 +108,7 @@
                     <a href="/politica-de-privacidade">Política de Privacidade</a>
                 </p>
 
-                <script>
-                    document.getElementById("form").addEventListener("submit", function (event) {
-                        event.preventDefault(); // Evita o envio padrão do formulário
-                        var formData = new FormData(this);
 
-                        // Envia os dados para o arquivo PHP no servidor usando AJAX
-                        var xhr = new XMLHttpRequest();
-                        xhr.open("POST", "action_page.php", true);
-                        xhr.onload = function () {
-                            if (xhr.status === 200) {
-                                alert(xhr.responseText); // Exibe a resposta do servidor
-                            } else {
-                                alert('Erro ao enviar o formulário.');
-                            }
-                        };
-                        xhr.send(formData);
-                    });
-                </script>
 </body>
 
 </html>
