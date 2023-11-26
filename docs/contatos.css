@@ -10,17 +10,13 @@
     --color-blue: #1d054e;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
+
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-orange1);
     color: var(--color-blue);
-    height: 85vh;
-
 }
 
 p {
@@ -29,8 +25,9 @@ p {
 }
 
 .nos {
-    border-radius: 50%;
-    margin-left: 1%;
+
+    margin-left: 6%;
+    margin-top: 4%;
 
 }
 
@@ -39,17 +36,23 @@ legend {
     text-align: center;
 }
 
-fieldset {
-    margin: auto;
-    padding-left: 3%;
-    width: 50%;
-    height: 250px;
-    display: flex;
-    margin-top: 3%;
-    border-radius: 15%;
 
+.conteudo {
+    display: flex;
+    justify-content: center;
 
 }
+
+
+
+@media only screen and (max-width: 700px) {
+    fieldset {
+        max-width: 100%;
+        /* Largura total em telas menores */
+    }
+}
+
+
 
 h1 {
     margin-bottom: 1rem;
@@ -70,4 +73,5 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: var(--color-orange3);
+
 }
